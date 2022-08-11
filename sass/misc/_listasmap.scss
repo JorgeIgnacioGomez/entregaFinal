@@ -1,0 +1,18 @@
+@import url(ˈ./misc/normalizeˈ);
+@import url(ˈ./misc/variablesˈ);
+
+@import url(ˈ./partials/headerˈ);
+@import url(ˈ./views/homeˈ);
+@import url(ˈ/assets/css/main.cssˈ);
+
+$lista1: red, green, yellow, blue;
+
+$primario:nth($lista1, 3);
+
+h1 {
+    color: $primario;
+}
+
+a{
+    color:black;
+}

@@ -1,0 +1,213 @@
+@import url(ˈ./misc/normalizeˈ);
+@import url(ˈ./misc/variablesˈ);
+
+@import url(ˈ./partials/headerˈ);
+@import url(ˈ./views/homeˈ);
+
+$primary: #000000;
+$secondary: #ff5376;
+$alternative: #302f4d;
+$text-color: #2b2b2b;
+
+$spacing-large: 6rem;
+$spacing-medium: 2.4rem;
+$spacing-small: 2rem;
+$spacing-xsmall:3rem;
+
+$lista1: red, green, white, blue;
+$primario:nth($lista1, 3);
+
+$headings:(h1: 4em, h2: 3em, h3: 2em, h4: 1em, h5: 0.75em, h6: 0.35em);
+$h1: map-get($headings, h3);
+$argumento1: black;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-size: large;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    color: $secondary
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+    background-image: linear-gradient(135deg, #9442ff, #8a90ec, #6784f7, #3b38ff, #7c64c9, #fd9ec2);
+    background-size: 500%;
+    padding-bottom: 3em;
+    min-height: 100vh;
+    max-width: 100%;
+    bottom: 0;
+    width: 100%;
+    position: inherit;
+;
+}
+
+.iframeq {
+    width: 100%;
+    height: 100%;
+}
+
+.miMarco {
+    border: 1px solid #00ff00;
+    position: fixed;
+    top: 6.25rem;
+    left: 18.75em;
+    width: 15.625rem;
+    height: 6.25em;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+html {
+    width: auto;
+}
+
+#btn-menu {
+    display: none;
+    width: 100%;
+    position: fixed;
+}
+
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    position: inherit;
+}
+
+.menu li {
+    text-align: center;
+    border-right: 1px solid;
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.menu li:hover {
+    background: rgba(255, 166, 218, 0.541);
+    width: 100%;
+    position: initial;
+}
+
+.menu li a {
+    display: block;
+    padding: 0.9375rem 1.25rem;
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+}
+
+footer {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #000000;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.6875rem;
+    bottom: 0;
+    width: 100%
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    line-height: 390%;
+    color: $primary
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+}
+
+footer {
+    height: 17.5;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 0.8em;
+}
+
+.contenedor {
+    display: grid;
+    gap: 0.625 rem;
+    grid-template:
+    "header"100% "contenedor"100% "footer"100%;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.letra{
+    color:#000000;
+}
+
+.header {
+	grid-area: header;
+	padding: 1.25rem;
+	background: #fff;
+	box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+}
+
+.contenedor {
+	width: 100%;
+	max-width: 1500px;
+	display: grid;
+	grid-gap: 1.25rem;
+}
+
+p {
+    color: $primary;
+}
+
+h1{
+    font-size: $h1;
+}
+
+.texto{
+    text-decoration: underline;
+    text-shadow: #2b2b2b
+}
+
+.texto__subrayado{
+    @extend .texto;
+    font-size: 1.45em;
+}
+
+@mixin sizes( $argumento1){
+    color: $argumento1;
+}
+
+p{
+    @include sizes ( rgb(0, 0, 0))
+}
+
+a{
+    color:#000000;
+}
+
+p{
+    text-decoration: underline;
+}

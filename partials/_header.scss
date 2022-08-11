@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: $spacing-small;
+    border-bottom: 2px solid $secondary;
+    margin-top: 20px;
+}
+    .header__img {
+        max-width: 120px;
+    }
+    
+    .menu{
+        display: flex;
+        gap: 2px;
+    }
+        &__link{
+            font-size:small;
+            padding: 1px;
+            background-color: whitesmoke;
+        }
